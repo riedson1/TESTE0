@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grupo VIP Streetwear</title>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #bbb;
+      margin-bottom: 30px;
+      font-size: 16px;
+      max-width: 500px;
+    }
+
+    a.button {
+      background-color: #25d366;
+      color: #000;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #1ebd59;
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1191392759421810'); // Pixel do cliente
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1191392759421810&ev=PageView&noscript=1"/>
+  </noscript>
+
+</head>
+<body>
+
+  <h1>🚀 Bem-vindo ao Grupo VIP!</h1>
+  <p>Entre agora no nosso grupo exclusivo e tenha acesso antecipado a lançamentos, ofertas limitadas e peças raras da cena streetwear nacional.</p>
+  <a href="https://chat.whatsapp.com/IdZoBl62mS60J4Ft3jfHNX?mode=ac_t" class="button" id="entrarGrupo">Entrar no Grupo VIP</a>
+
+  <script>
+    // Dispara o evento "Lead" ao clicar no botão
+    document.getElementById("entrarGrupo").addEventListener("click", function() {
+      fbq('track', 'Lead');
+    });
+  </script>
+
+</body>
+</html>
